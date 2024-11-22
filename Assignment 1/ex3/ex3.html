@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex3</title>
+  <link rel="stylesheet" href="ex3.css">
+  <script src="Clock.js"></script>
+  <script src="ex3.js"></script>
+</head>
+
+<body>
+  <form id="clockForm" action="">
+    <h2>Country Clock Generator</h2>
+    <div class="form-group">
+      <label for="country">Enter Country</label>
+      <input type="text" id="country" name="country" required>
+    </div>
+    <div class="form-group">
+      <label for="hour">Enter Hour</label>
+      <input type="number" id="hours" name="hour" required>
+    </div>
+    <div class="form-group"> 
+      <label for="mins">Enter Minutes</label>
+      <input type="number" id="mins" name="mins" required>
+    </div>
+    <div class="form-group">
+      <label for="secs">Enter Seconds</label>
+      <input type="number" id="secs" name="secs" required>
+    </div>
+    <label id="lblBtn" for="btn">5 Clocks left</label>
+    <button id="btnAddClock" name="btn" type="submit">Add Clock!</button>
+  </form>
+  <div style="visibility: hidden;" id="clockList">
+
+  </div>
+</body>
+
+</html>

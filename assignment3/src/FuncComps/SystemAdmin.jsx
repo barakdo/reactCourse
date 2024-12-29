@@ -29,18 +29,18 @@ export default function SystemAdmin() {
 
 
   return (
-    <div style={{ borderRadius: "20px", border: '2px solid white' }}>
+    <div className="component" style={{ borderRadius: "20px", border: '2px solid white' }}>
         <div style={{display: "flex", justifyContent: "flex-end"}}>
         <button style={{margin: "10px"}} onClick={logout}>התנתק</button>
         </div>
-        <h1 style={{ textAlign: "center",}}>רשימת משתמשים</h1>
+        <h2 style={{ textAlign: "center",}}>רשימת משתמשים</h2>
       <div style={{ justifyContent: "center", margin: "10px", padding: '10px', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr', rowGap: '10px', columnGap: '10px' }}>
-        <h2>פעולות</h2>
-        <h2>דואר אלקטורני</h2>
-        <h2>כתובת</h2>
-        <h2>תאריך לידה</h2>
-        <h2>שם מלא</h2>
-        <h2>שם משתמש</h2>
+        <h3>פעולות</h3>
+        <h3>דואר אלקטורני</h3>
+        <h3>כתובת</h3>
+        <h3>תאריך לידה</h3>
+        <h3>שם מלא</h3>
+        <h3>שם משתמש</h3>
       </div>
       <div style={{alignItems:"center" ,justifyContent: "center", margin: "10px", padding: '10px', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr', rowGap: '10px', columnGap: '10px' }}>
         {users.map((user, index) => (

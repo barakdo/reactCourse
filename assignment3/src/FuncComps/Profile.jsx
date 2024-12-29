@@ -28,7 +28,7 @@ useEffect(() => {
 
 
   return (
-    <div style={{ borderRadius: "20px", border: '2px solid white' }}>
+    <div className="component" style={{ borderRadius: "20px", border: '2px solid white' }}>
       <div style={{  margin: "10px", padding: '10px', textAlign: 'left', display: 'grid', gridTemplateColumns: '1fr 1fr', rowGap: '10px', columnGap: '30px', alignItems:"center" }}>
         <div>
           <img style={{ height: "150px" }} src={user.image} alt="" />

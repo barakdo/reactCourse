@@ -66,3 +66,128 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #ff0044, #00ff99, #0044ff, #ffcc00);
+  background-size: 400% 400%;
+  animation: gradientBackground 10s ease infinite;
+  overflow: hidden;
+}
+
+/* Title styling */
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #fff;
+  animation: moveTitle 3s ease-in-out infinite, glowEffect 1.5s ease-in-out infinite alternate;
+  position: relative;
+  z-index: 1;
+}
+
+
+@keyframes moveTitle {
+  0% {
+      transform: translateX(-10px);
+  }
+  50% {
+      transform: translateX(10px);
+  }
+  100% {
+      transform: translateX(-10px);
+  }
+}
+
+
+@keyframes glowEffect {
+  0% {
+      text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+      color: #ff00ff;
+  }
+  50% {
+      text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+      color: #00ffff;
+  }
+  100% {
+      text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00, 0 0 30px #ffff00;
+      color: #ffff00;
+  }
+}
+
+
+@keyframes gradientBackground {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+input {
+  font-size: 1.5rem;
+  padding: 15px;
+  margin-top: 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+
+input:focus {
+  transform: scale(1.05);
+  border-color: #00ff99;
+  background-color: rgba(0, 255, 153, 0.2);
+}
+
+.component {
+  background-color: rgba(255, 255, 255, 0.2); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+  color: #000; 
+}
+.component > div {
+  align-items: center;
+}
+
+
+input[type="button"] {
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+input[type="button"]:hover {
+  transform: scale(1.05);
+  border-color: #00ff99;
+  background-color: rgba(0, 255, 153, 0.2);
+}
+
+
+input[type="button"]:focus {
+  transform: scale(1.05);
+  border-color: #00ff99;
+  background-color: rgba(0, 255, 153, 0.2);
+}
+

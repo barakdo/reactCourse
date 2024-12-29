@@ -58,7 +58,7 @@ export default function Login() {
 
   return (
     <div>
-      <div style={{ borderRadius: "20px", border: '2px solid white', }}>
+      <div className="component" style={{ borderRadius: "20px", border: '2px solid white', }}>
         <h2 style={{ marginBottom: 0 }}>Login</h2>
         <div style={{ margin: "10px", padding: '10px', textAlign: 'left', display: 'grid', gridTemplateColumns: '150px 1fr', rowGap: '10px', columnGap: '10px' }}>
           <label htmlFor="usernameInput">Username</label>

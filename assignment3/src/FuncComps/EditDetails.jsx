@@ -193,7 +193,7 @@ export default function EditDetails() {
 
 
   return (
-    <div style={{ borderRadius: "20px", border: '2px solid white' }}>
+    <div className="component" style={{ borderRadius: "20px", border: '2px solid white' }}>
       <div style={{ display: 'flex', justifyContent: 'flex-end', margin: "10px" }}>
         <button style={{ color: "white", backgroundColor: "red", fontWeight: "700", fontSize: "20px", border: "solid white 1px" }} onMouseEnter={(e) => { e.target.style.backgroundColor = "white"; e.target.style.color = "red" }}
           onMouseLeave={(e) => { e.target.style.backgroundColor = "red"; e.target.style.color = "white" }} onClick={() => setIsEditUserDetails("no")}>X</button>
